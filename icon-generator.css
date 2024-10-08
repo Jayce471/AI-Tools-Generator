@@ -1,0 +1,212 @@
+/* --------------------------ICON FINDER GENERATOR----------------------------------------*/
+
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+.header {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo h1 {
+    font-size: 24px;
+}
+
+.header .logo a {
+    color: #4A90E2;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header nav ul li a {
+    color: #4A90E2;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.header nav ul li a:hover {
+    color: #007bff;
+}
+/* AI Tool Section */
+.ai-tool-section {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.form{
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    height: 80px;
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ai-tool-container h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #292b2c;
+}
+
+.ai-tool-container p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #555;
+}
+/* Search Form */
+.search-bar {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 15px;
+    font-size: 16px;
+    width: 70%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 12px 20px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Results Section */
+.icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.icon-container img {
+    width: 100px; /* Increased size for consistency */
+    height: 100px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    padding: 10px;
+    transition: transform 0.2s, border-color 0.3s ease;
+}
+
+.icon-container img:hover {
+    transform: scale(1.1);
+    border-color: #007bff; /* Change border color on hover */
+}
+.download-button {
+    position: absolute;
+    bottom: 10px; /* Adjust to place the icon at the bottom */
+    right: 10px; /* Adjust to place the icon at the right */
+    background-color: transparent; /* Transparent background */
+    color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    transition: background-color 0.3s ease, transform 0.2s; /* Add transition for hover */
+}
+
+.download-button i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.download-button:hover {
+    background-color: rgba(199, 222, 247, 0.7); /* Change to semi-transparent on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Show More Button */
+#show-more-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    outline: 0;
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#show-more-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .icon-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-container img {
+        width: 80%; /* Adjusted for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: #292b2c;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}

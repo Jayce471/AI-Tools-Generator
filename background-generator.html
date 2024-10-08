@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Generator</title>
+    <link rel="stylesheet" href="background-generator.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1><a href="index.html">AI Tools</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="ai-tool-section">
+        <div class="background-generator-container" id="backgroundPreview">
+            <h2><span style="color:#007bff;">Background </span>Generator</h2>
+            <p>Choose your colors and angle to create a beautiful background!</p>
+
+            <div class="controls" id="colorControls">
+                <input type="color" class="color-input" value="#ff0000">
+                <input type="color" class="color-input" value="#ffff00">
+            </div>
+            <div>
+                <button id="addColorBtn" class="small-btn">Add Color</button>
+                <button id="removeColorBtn" class="small-btn">Remove Color</button>
+            </div>
+            <input type="range" id="angle" min="0" max="360" value="90">
+            <div id="output"></div>
+            <button id="downloadBtn">Download Background</button>
+            <button id="savePresetBtn">Save Preset</button>
+            <button id="loadPresetBtn">Load Preset</button>
+            
+
+            <div class="palette" id="paletteContainer">
+                <!-- Color palette suggestions will be generated here -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 AI Tools. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="background-generator.js"></script>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Background Generator</title>
+    <link rel="stylesheet" href="background-generator.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Responsive Background Generator</h1>
+        <div class="controls" id="colorControls">
+            <input type="color" class="color-input" value="#ff0000">
+            <input type="color" class="color-input" value="#ffff00">
+        </div>
+        <input type="range" id="angle" min="0" max="360" value="90">
+        <div id="output"></div>
+        <button id="downloadBtn">Download Background</button>
+        <button id="savePresetBtn">Save Preset</button>
+        <button id="loadPresetBtn">Load Preset</button>
+        
+        <div>
+            <button id="addColorBtn" class="small-btn">Add Color</button>
+            <button id="removeColorBtn" class="small-btn">Remove Color</button>
+        </div>
+
+        <div class="palette" id="paletteContainer">
+             Color palette suggestions will be generated here 
+        </div>
+    </div>
+    
+    <script src="background-generator.js"></script>
+</body>
+</html> -->

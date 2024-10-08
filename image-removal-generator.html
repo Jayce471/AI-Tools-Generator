@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Background Remover</title>
+    <link rel="stylesheet" href="image-removal-generator.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1><a href="index.html">AI Tools</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Remove Backgrounds Effortlessly</h1>
+            <p>Upload an image and remove the background in seconds with AI.</p>
+            <input type="file" id="image-upload" accept="image/*" />
+            <button id="remove-bg-btn">Remove Background</button>
+        </div>
+    </section>
+
+    <!-- Display images side by side -->
+    <section class="result-section">
+        <h2>Compare Uploaded and Processed Images:</h2>
+        <div class="image-comparison">
+            <div class="image-container">
+                <h3>Uploaded Image</h3>
+                <img id="uploaded-image" alt="Uploaded Image Preview" />
+            </div>
+            <div class="image-container">
+                <h3>Processed Image</h3>
+                <img id="output-image" alt="Processed Image" />
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer"></footer>
+        <div class="footer-content">
+            <p>&copy; 2024 AI Tools. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="image-removal-generator.js"></script>
+</body>
+</html>

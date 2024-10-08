@@ -1,0 +1,364 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+.header {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo h1 {
+    font-size: 24px;
+}
+
+.header .logo a {
+    color: #4A90E2;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header nav ul li a {
+    color: #4A90E2;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.header nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Slide Input Styles */
+.slide-input-container {
+    background-color: #ffffff;
+    padding: 15px; /* Reduced padding */
+    margin: 10px; /* Smaller margin */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Make containers flexible */
+    min-width: 200px; /* Minimum width for smaller screens */
+    max-width: 300px; /* Limit maximum width */
+    max-height: 400px; /* Set maximum height */
+    overflow: hidden; /* Hide overflow */
+}
+
+/* Flexbox container for the input fields */
+.slide-inputs-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Wrap to new line if necessary */
+    gap: 10px; /* Space between inputs */
+}
+
+/* Input Styles */
+.slide-input-container input,
+.slide-input-container textarea {
+    width: 100%;
+    padding: 8px; /* Reduced padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Reduced margin */
+    font-size: 14px;
+    transition: border 0.3s ease;
+}
+
+.slide-input-container textarea {
+    resize: none; /* Disable manual resizing */
+    height: 80px; /* Set a fixed height for the text area */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.slide-input-container input:focus,
+.slide-input-container textarea:focus {
+    border-color: #007bff;
+}
+
+/* Button Styles */
+#generateSlides {
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#generateSlides:hover {
+    background-color: #007bff;
+}
+
+/* Presentation Container */
+.presentation-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between slides */
+    margin: 20px; /* Margin around the container */
+    padding: 20px; /* Inner padding */
+    background-color: #f4f4f4; /* Light background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    overflow: wrap; /* Ensure children can expand without overflow */
+}
+
+/* Slide Card Styles */
+.slide {
+    background-color: #ffffff; /* White background for slides */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    margin: 10px 0; /* Margin between slides */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation effects */
+    position: relative; /* Positioning for child elements */
+    overflow: wrap; /* Allow the slide to grow with content */
+}
+
+/* Default Slide Title and Content Styles */
+.slide h3 {
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    font-size: 1.6em; /* Size of the title */
+    color: #4A90E2; /* Title color */
+    margin-bottom: 10px; /* Space below the title */
+    text-align: center; /* Center align the title */
+}
+
+.slide p {
+    font-family: 'Open Sans', sans-serif; /* Readable font */
+    margin: 10px 0; /* Space above and below paragraphs */
+    line-height: 1.8; /* Line height for readability */
+    color: #333; /* Text color */
+}
+
+/* Blockquote Style */
+.slide blockquote {
+    font-family: 'Italic', serif; /* Italic font for quotes */
+    font-size: 1.1em; /* Font size for quotes */
+    margin: 10px 0; /* Margin above and below quotes */
+    border-left: 4px solid #4A90E2; /* Blue border on the left */
+    padding-left: 10px; /* Space inside the blockquote */
+    color: #555; /* Lighter gray for quotes */
+    font-style: italic; /* Make it italic */
+}
+
+/* List Style */
+.slide ul {
+    list-style-type: circle; /* Change bullet style */
+    margin: 10px 0; /* Space above and below lists */
+    padding-left: 20px; /* Indent the list */
+    color: #777; /* Light gray for list items */
+}
+
+/* Image Style */
+.slide img {
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+    margin: 10px 0; /* Space above and below images */
+}
+
+/* Add more styles as needed... */
+
+
+/* List Style */
+.slide ul {
+    list-style-type: circle; /* Change bullet style */
+    margin: 10px 0;
+    padding-left: 20px;
+    color: #777; /* Light gray for list items */
+}
+
+/* Image Style */
+.slide img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Rounded corners for images */
+    margin: 10px 0;
+}
+
+/* Add animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.slide {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Layout Styles */
+.layout {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.layout:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.layout h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Slide Styles for Vintage Aesthetic */
+.vintage-slide {
+    background-color: #FFF3E2; /* Soft orange */
+    border-radius: 12px;
+}
+
+.vintage-slide h3 {
+    font-family: 'Playfair Display', serif; /* Elegant font */
+    color: #3C2A1D; /* Dark brown */
+}
+
+.vintage-slide blockquote {
+    font-family: 'Georgia', serif;
+    color: #6B4C4A; /* Muted brown */
+}
+
+/* Slide Styles for Tech-Inspired */
+.tech-slide {
+    background-color: #1B2631; /* Darker blue */
+}
+
+.tech-slide h3 {
+    font-family: 'Roboto', sans-serif; /* Clean and modern */
+    color: #FFCC29; /* Bright yellow */
+}
+
+.tech-slide blockquote {
+    font-family: 'Courier New', monospace; /* Techy font */
+    color: #B2C3C7; /* Light gray */
+}
+
+/* Slide Styles for Nature Inspired */
+.nature-slide {
+    background-color: #C8E6C9; /* Light green */
+}
+
+.nature-slide h3 {
+    font-family: 'Lora', serif; /* Elegant font */
+    color: #2E7D32; /* Dark green */
+}
+
+.nature-slide blockquote {
+    font-family: 'Georgia', serif;
+    color: #4E342E; /* Muted brown */
+}
+
+/* Slide Styles for Artistic Brushstroke */
+.artistic-slide {
+    background-color: #FFFFFF; /* White */
+}
+
+.artistic-slide h3 {
+    font-family: 'Dancing Script', cursive; /* Brush script font */
+    color: #FF6F61; /* Coral color */
+}
+
+.artistic-slide blockquote {
+    color: #666; /* Lighter gray for quotes */
+}
+
+/* Slide Styles for Bold Modern */
+.modern-bold-slide {
+    background-color: #1E1E1E; /* Dark background */
+    color: #F0F0F0; /* Light text */
+    border-radius: 15px;
+}
+
+.modern-bold-slide h3 {
+    font-family: 'Oswald', sans-serif; /* Bold and striking font */
+    color: #FF5252; /* Bold red */
+    text-transform: uppercase;
+}
+
+.modern-bold-slide p, 
+.modern-bold-slide blockquote {
+    color: #BDBDBD; /* Subtle light gray */
+    font-family: 'Roboto', sans-serif; /* Clean, modern font */
+}
+
+/* Slide Styles for Retro Design */
+.retro-slide {
+    background-color: #FFE4C4; /* Beige background */
+    border-radius: 10px;
+}
+
+.retro-slide h3 {
+    font-family: 'Pacifico', cursive; /* Fun retro font */
+    color: #D2691E; /* Warm orange */
+}
+
+.retro-slide p {
+    font-family: 'Courier New', monospace; /* Retro techy */
+    color: #5C4033; /* Dark brown */
+}
+
+.retro-slide blockquote {
+    color: #7B4B1D; /* Muted brown for quotes */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .slide-input-container {
+        min-width: 100%; /* Full width on smaller screens */
+    }
+
+    .presentation-container {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}

@@ -1,0 +1,183 @@
+/* --------------------------AI TOOL ------------------------------------------------*/
+
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+.header {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo h1 {
+    font-size: 24px;
+}
+
+.header .logo a {
+    color: #4A90E2;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header nav ul li a {
+    color: #4A90E2;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.header nav ul li a:hover {
+    color: #007bff;
+}
+
+/* AI Tool Section */
+.ai-tool-section {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.form {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    height: 80px;
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ai-tool-container h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #292b2c;
+}
+
+.ai-tool-container p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+/* Input Field */
+form input {
+    width: 50%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Generate Button */
+form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.result-container {
+    margin-top: 30px;
+}
+
+::placeholder {
+    color: grey;
+    font-size: 18px;
+}
+
+#show-more-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    outline: 0;
+    padding: 12px 20px;
+    border-radius: 4px;
+    margin: 10px auto 100px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Search Result Section */
+#search-result {
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+#search-result .article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#search-result .article h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #292b2c;
+}
+
+#search-result .article p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    background-color: #292b2c;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}

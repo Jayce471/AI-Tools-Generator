@@ -1,0 +1,197 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+.header {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo h1 {
+    font-size: 24px;
+}
+
+.header .logo a {
+    color: #4A90E2;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header nav ul li a {
+    color: #4A90E2;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.header nav ul li a:hover {
+    color: #007bff;
+}
+
+/* AI Tool Section */
+.ai-tool-section {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.ai-tool-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ai-tool-container h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #292b2c;
+}
+
+.ai-tool-container p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+/* Input Options */
+#inputOptions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#inputOptions button,
+#inputOptions input[type="file"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#inputOptions button:hover,
+#inputOptions input[type="file"]:hover {
+    background-color: #0056b3;
+}
+
+#inputOptions input[type="file"] {
+    display: none;
+}
+
+/* Editing Tools */
+#editingTools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#editingTools button, 
+#editingTools select, 
+#editingTools input[type="color"] {
+    background-color: grey;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+#editingTools button:hover, 
+#editingTools select:hover, 
+#editingTools input[type="color"]:hover {
+    background-color: #0056b3;
+}
+
+#editingTools input[type="color"] {
+    padding: 0;
+    height: 34px;
+    width: 34px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Text Editor */
+#editor {
+    width: 100%;
+    min-height: 200px;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#editor:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Save PDF Button */
+.ai-tool-container button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.ai-tool-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
+    background-color: #292b2c;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}

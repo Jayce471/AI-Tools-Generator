@@ -1,0 +1,308 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+.header {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo h1 {
+    font-size: 24px;
+}
+
+.header .logo a {
+    color: #4A90E2;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header nav ul li a {
+    color: #4A90E2;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.header nav ul li a:hover {
+    color: #007bff;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-container input,
+.input-container textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Grid for the articles */
+#articleGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.article-card {
+    
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow: hidden;
+    height: 300px;
+}
+.article-card img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container */
+    margin-bottom: 10px;
+}
+
+.article-card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.article-card p {
+    margin: 0;
+    overflow-wrap: break-word; /* Break long words */
+}
+
+.caption {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+}
+
+
+/* Layout 1: Image on top, then title, then content */
+.layout-1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.layout-1 h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.layout-1 p {
+    font-size: 1rem;
+}
+
+/* Layout 2: Title on top, then image, then content */
+.layout-2 h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.layout-2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Layout 3: Image on the left, content on the right */
+.layout-3 {
+    display: flex;
+    align-items: center;
+}
+
+.layout-3 img {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.layout-3 h2, .layout-3 p {
+    margin: 0;
+}
+
+/* Layout 4: Image as background with overlaid text */
+.layout-4 {
+    position: relative;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+}
+
+.layout-4 h2, .layout-4 p {
+    position: relative;
+    z-index: 2;
+}
+
+.layout-4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.layout-4 img {
+    display: none; /* Hide the img tag as the background is handled by CSS */
+}
+
+/* Layout 5: Title and content only (no image) */
+.layout-5 h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.layout-5 p {
+    font-size: 1rem;
+}
+
+/* Layout 6: Image on the right */
+.layout-6 {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.layout-6 img {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+/* Layout 7: Title Over Image */
+.layout-7 {
+    position: relative;
+    color: #fff;
+}
+
+.layout-7 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.layout-7 h2 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    margin: 0;
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Layout 8: Vertical Split */
+.layout-8 {
+    display: flex;
+}
+
+.layout-8 img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.layout-8 h2, .layout-8 p {
+    width: 50%;
+    padding: 10px;
+}
+
+/* Layout 9: Horizontal Split */
+.layout-9 {
+    display: flex;
+    flex-direction: column;
+}
+
+.layout-9 h2 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.layout-9 .content-container {
+    display: flex;
+}
+
+.layout-9 img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+/* Layout 10: Captioned Image */
+.layout-10 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.layout-10 .caption {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Layout 11: Full-Width Image */
+.layout-11 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}

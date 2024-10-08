@@ -1,0 +1,259 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3, p {
+    margin-top: 10px;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+.header {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo h1 {
+    font-size: 24px;
+}
+
+.header .logo a {
+    color: #4A90E2;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header nav ul li a {
+    color: #4A90E2;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.header nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Input Container */
+.input-container {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 20px;
+    gap: 5px;
+}
+
+input {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    display: block;
+    width: auto;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Mockup Grid */
+.mockup-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Card Styles */
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Additional styles for different card layouts */
+.layout-1 {
+    background-color: #e3f2fd;
+}
+
+.layout-2 {
+    background-color: #ffe0b2;
+}
+
+.layout-3 {
+    background-color: #ffccbc;
+}
+
+.layout-4 {
+    background-color: #c8e6c9;
+}
+
+.layout-5 {
+    background-color: #f8bbd0;
+}
+/* Additional Layout 6 - Bold Text and Centered */
+.layout-6 {
+    background-color: #d1c4e9;
+    text-align: center;
+    font-weight: bold;
+    padding: 30px;
+    border: 2px solid #512da8;
+}
+
+.layout-6 h2 {
+    font-size: 24px;
+}
+
+.layout-6 p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Additional Layout 7 - Left-Aligned with Box Shadow */
+.layout-7 {
+    background-color: #ffecb3;
+    text-align: left;
+    padding: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.layout-7 h2 {
+    font-size: 22px;
+    color: #ff6f00;
+}
+
+.layout-7 p {
+    font-size: 14px;
+    color: #795548;
+    margin-bottom: 15px;
+}
+
+/* Additional Layout 8 - Minimalist with Rounded Corners */
+.layout-8 {
+    background-color: #b2dfdb;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.layout-8 h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #004d40;
+}
+
+.layout-8 p {
+    font-size: 14px;
+    color: #00796b;
+}
+
+/* Additional Layout 9 - Vertical Text Alignment */
+.layout-9 {
+    background-color: #f3e5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    height: 200px;
+    border: 3px dashed #8e24aa;
+}
+
+.layout-9 h2, .layout-9 p {
+    margin: 0;
+    text-align: center;
+}
+
+/* Additional Layout 10 - Dark Theme with Vibrant Fonts */
+.layout-10 {
+    background-color: #212121;
+    color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ff5722;
+}
+
+.layout-10 h2 {
+    font-size: 24px;
+    color: #ff5722;
+}
+
+.layout-10 p {
+    font-size: 16px;
+    color: #ffab91;
+}
+
+/* Additional Layout 11 - Card with Image Background */
+.layout-11 {
+    background-image: url('path/to/image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.layout-11 h2 {
+    font-size: 26px;
+}
+
+.layout-11 p {
+    font-size: 18px;
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI PDF Generator</title>
+    <link rel="stylesheet" href="pdf-generator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.0/mammoth.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <h1><a href="index.html">AI Tools</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- AI Tool Section -->
+    <section class="ai-tool-section">
+        <div class="ai-tool-container">
+            <h2><span style="color:#007bff;">AI PDF </span>Generator</h2>
+            <p>Enter text below to create your PDF using our AI-based editor.</p>
+
+            <!-- Input Options -->
+            <div id="inputOptions">
+                <button onclick="document.getElementById('fileInput').click()">Upload File</button>
+                <input type="file" id="fileInput" accept=".docx,.txt">
+                <button onclick="clearEditor()">Clear Editor</button>
+            </div>
+
+            <!-- Editing Tools -->
+            <div id="editingTools">
+                <!-- Text Formatting -->
+                <button onclick="formatText('bold')"><i class="fas fa-bold"></i></button>
+                <button onclick="formatText('italic')"><i class="fas fa-italic"></i></button>
+                <button onclick="formatText('underline')"><i class="fas fa-underline"></i></button>
+                <button onclick="formatText('strikethrough')"><i class="fas fa-strikethrough"></i></button>
+                <button onclick="formatText('subscript')"><i class="fas fa-subscript"></i></button>
+                <button onclick="formatText('superscript')"><i class="fas fa-superscript"></i></button>
+
+                <!-- Alignment -->
+                <select id="alignmentSelect" onchange="alignText(this.value)">
+                    <option value="">Align</option>
+                    <option value="left"><i class="fas fa-align-left"></i></option>
+                    <option value="center"><i class="fas fa-align-center"></i></option>
+                    <option value="right"><i class="fas fa-align-right"></i></option>
+                </select>
+
+                <!-- Text Size -->
+                <select onchange="changeFontSize(this.value)">
+                    <option value="">Font Size</option>
+                    <option value="1">Small</option>
+                    <option value="3">Normal</option>
+                    <option value="5">Large</option>
+                    <option value="7">Huge</option>
+                </select>
+
+                <!-- Bullets and Numbering -->
+                <button onclick="formatText('insertUnorderedList')"><i class="fas fa-list-ul"></i></button>
+                <button onclick="formatText('insertOrderedList')"><i class="fas fa-list-ol"></i></button>
+
+                <!-- Cut, Copy, Paste -->
+                <button onclick="document.execCommand('cut')"><i class="fas fa-cut"></i></button>
+                <button onclick="document.execCommand('copy')"><i class="fas fa-copy"></i></button>
+                <button onclick="document.execCommand('paste')"><i class="fas fa-paste"></i></button>
+
+                <!-- Text and Background Color -->
+                <div class="color-picker-container">
+                    <button id="colorButton" onclick="document.getElementById('colorPicker').click()"><i class="fas fa-palette"></i></button>
+                    <input type="color" id="colorPicker" onchange="changeColor(this.value)" style="display:none;">
+                </div>
+                <div class="color-picker-container">
+                    <button id="bgColorButton" onclick="document.getElementById('bgColorPicker').click()"><i class="fas fa-paint-roller"></i></button>
+                    <input type="color" id="bgColorPicker" onchange="changeBackgroundColor(this.value)" style="display:none;">
+                </div>
+
+                <!-- Undo/Redo -->
+                <button onclick="document.execCommand('undo', false, null)"><i class="fas fa-undo"></i></button>
+                <button onclick="document.execCommand('redo', false, null)"><i class="fas fa-redo"></i></button>
+            </div>
+
+            <!-- Editable Content Area -->
+            <div contenteditable="true" id="editor"></div>
+
+            <!-- Save as PDF Button -->
+            <button onclick="savePDF()">Save as PDF</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 AI Tools. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- External Script -->
+    <script src="pdf-generator.js"></script>
+</body>
+</html>

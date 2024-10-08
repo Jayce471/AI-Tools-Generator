@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background-color: #292b2c;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Featured Tools Section */
+.featured-section {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.featured-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.tool-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.showcase-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+}
+
+.showcase-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.showcase-card h3 {
+    margin: 20px 0 10px;
+    font-size: 24px;
+}
+
+.showcase-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* AI Tool Section */
+.ai-tool-section {
+    padding: 50px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.ai-tool-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.generate-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.result-container {
+    margin-top: 20px;
+}
+
+.result-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+    background-color: #292b2c;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-content p {
+    margin: 0;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card Generator</title>
+    <link rel="stylesheet" href="business.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <h1><a href="index.html">AI Tools</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="mockups.html">Mockups</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form id="businessCardForm">
+        <div class="input-container">
+            <input type="text" id="userNameInput" placeholder="Your Name" maxlength="15" required>
+            <input type="number" id="contactInput" placeholder="Contact Number" maxlength="7" required>
+            <input type="text" id="addressInput" placeholder="Address" maxlength="20" required>
+            <input type="text" id="serviceInput" placeholder="Service" maxlength="19" required>
+            <input type="text" id="socialMediaInput" placeholder="Social Media" maxlength="11" required>
+            <!-- <button type="submit">Generate Previews</button> -->
+        </div>
+    </form>
+    
+    <div id="mockupGrid" class="mockup-grid"></div>
+        
+    <footer>
+        <p>&copy; 2024 Social Media Mockup Generator. All Rights Reserved.</p>
+    </footer>
+
+    <script src="business.js"></script>
+</body>
+</html>

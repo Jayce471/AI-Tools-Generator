@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Food and Drink Menu</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1><a href="index.html">AI Tools</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="mockups.html">Mockups</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="input-section">
+            <h2>Customize Your Menu</h2>
+            <div class="input-container">
+                <input type="text" id="menuTitleInput" placeholder="Enter Menu Title" />
+                <input type="text" id="menuDescriptionInput" placeholder="Enter Menu Description" />
+                <input type="text" id="menuImageInput" placeholder="Enter Menu Image URL" />
+                
+                <!-- Input for starters -->
+                <input type="text" id="startersInput" placeholder="Enter starters (comma-separated)" />
+                
+                <!-- Input for main courses -->
+                <input type="text" id="mainCoursesInput" placeholder="Enter main courses (comma-separated)" />
+                
+                <!-- New input for desserts -->
+                <input type="text" id="dessertsInput" placeholder="Enter desserts (comma-separated)" />
+                
+                <!-- New input for beverages -->
+                <input type="text" id="beveragesInput" placeholder="Enter beverages (comma-separated)" />
+            </div>   
+        </section>
+
+        <section class="menu-container" id="menuContainer">
+            <!-- Dynamic Menu Content Will Appear Here -->
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 AI Tools. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon Finder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="icon-generator.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1><a href="index.html">AI Tools</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="ai-tool-section">
+        <div class="ai-tool-container">
+            <h2><span style="color:#007bff;">Icon </span>Finder Generator</h2>
+            <p>Enter a keyword to find icons from the Iconfinder API.</p>
+
+            <form id="search" class="search-bar">
+                <input type="text" id="query" name="query" placeholder="Search for icons..." required autofocus>
+                <button type="submit"><i class="fa fa-search"></i> Search</button>
+                <input type="hidden" name="count" value="30">
+            </form>
+
+            <div id="search-result" class="icon-container"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 AI Tools. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="text/template" id="result-template">
+        <img src="{{ url }}" alt="" width="64" data-icon-id="{{ icon_id }}">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="icon-generator.js"></script>
+</body>
+</html>

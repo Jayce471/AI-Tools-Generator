@@ -1,0 +1,397 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+.header {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo h1 {
+    font-size: 24px;
+}
+
+.header .logo a {
+    color: #4A90E2;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header nav ul li a {
+    color: #4A90E2;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.header nav ul li a:hover {
+    color: #007bff;
+}
+.cta-btn {
+    padding: 10px 20px;
+    background-color: #4A90E2;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #357ABD;
+}
+
+
+.main-section {
+    padding: 20px;
+    text-align: center;
+}
+
+input, textarea {
+    padding: 10px;
+    width: 80%;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+/* 
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+} */
+
+/* Mockup Grid Styles */
+.mockup-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* General post layout styles */
+.post {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: left;
+    position: relative;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    max-width: 100%; /* Constrain the max width to the grid or container */
+}
+
+/* Post Header */
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+strong {
+    font-size: 1.2rem;
+}
+
+/* Post Content */
+.post-content {
+    margin-bottom: 10px;
+    overflow-wrap: break-word; /* Prevent text overflow */
+    word-break: break-word; /* Break long words */
+}
+
+/* Post Actions */
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.action-button {
+    background-color: #008cba;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition for transform */
+}
+
+.action-button:hover {
+    background-color: #005f75;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Layout 1: Standard layout */
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Layout 2: Content on the left, avatar on the right */
+.layout-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.layout-container .post-header {
+    order: 2;
+    margin-left: 10px;
+}
+
+.layout-container .post-content {
+    order: 1;
+    flex: 1;
+}
+
+/* Layout 3: Card-style layout */
+.card-container {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fdfdfd;
+}
+
+/* Layout 4: Sidebar layout */
+.sidebar-container {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center the placeholder */
+}
+
+.content-area {
+    width: 80%; /* Control the width of the content area */
+    margin: 20px auto; /* Center content horizontally */
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.sidebar {
+    margin-bottom: 20px; /* Add space between the sidebar and content */
+    text-align: center;
+}
+
+/* Layout 5: Split post view */
+.split-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.split-content-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* Layout 6: Floating avatar overlay */
+.overlay-container {
+    position: relative;
+}
+
+.floating-avatar {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.overlay-container .post-content {
+    margin-top: 40px;
+}
+
+/* Layout 7: Actions on top */
+.post-actions-on-top .post-actions {
+    order: -1;
+}
+
+/* Layout 8: Minimalistic */
+.minimalistic-layout .post-header {
+    justify-content: center;
+}
+
+.minimalistic-layout .post-content {
+    text-align: center;
+}
+
+/* Layout 9: Grid-style layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+
+/* Layout 10: Stacked layout */
+.stacked-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+/* INDEX STYLES */
+
+/* Featured Tools Section */
+.featured-tools {
+    padding: 80px 60px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.featured-tools h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+    font-weight: bold;
+}
+.tool-card a 
+{
+    text-decoration: none;
+}
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+/* Tool Card Styling */
+.tool-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for box-shadow */
+}
+
+.tool-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    text-decoration: #ffffff;
+    
+    background-color: #357ABD;
+    transform: translateY(-2px); 
+}
+
+.tool-card h3 {
+    font-size: 24px;
+    color: #4A90E2;
+    margin-bottom: 15px;
+}
+
+.tool-card h3:hover
+{
+    color: #ffffff;
+}
+
+.tool-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.tool-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.tool-btn {
+    padding: 10px 20px;
+    background-color: #4A90E2;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition for transform */
+}
+
+.tool-btn:hover {
+    background-color: #357ABD;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+
+/* .case-btn {
+   show padding: 10px 20px;
+    background-color: #4A90E2;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+
+.showcase-btn:hover {
+    background-color: #357ABD;
+    transform: translateY(-2px); 
+} */
+
+
+.footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
